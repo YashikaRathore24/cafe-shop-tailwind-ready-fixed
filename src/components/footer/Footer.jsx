@@ -35,7 +35,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h2>Modi Ji Chai Wala</h2>
+              <h2>Modi Ji Chai Wale</h2>
 
               <div className="title-line">
                 <span></span>
@@ -111,7 +111,7 @@ export default function Footer() {
     
 
       <div className="copyright">
-        © 2025 Modi Ji Chai Wala. All Rights Reserved.
+        © 2026 Modi Ji Chai Wale. All Rights Reserved.
       </div>
 
     </footer>
