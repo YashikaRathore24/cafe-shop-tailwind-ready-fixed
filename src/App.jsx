@@ -1,6 +1,6 @@
 import "./App.css";
 
-import Header from "./components/headers/Header";
+import Header from "./components/headers/Headers";
 import Home from "./components/home/Home";
 import About from "./components/About/About";
 import Features from "./components/features/Features";
