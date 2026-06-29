@@ -6,7 +6,7 @@ import About from "./components/About/About";
 import Features from "./components/features/Features";
 import Menu from "./components/menu/Menu";
 import Gallery from "./components/gallery/Gallery";
-import Contact from "./components/Contact/Contact";
+import Contact from "./components/contact/Contact";
 import Testinomal from "./components/testominal/Testinomal";
 // import Reservation from "./components/reservation/Reservation";
 import Footer from "./components/footer/Footer";
