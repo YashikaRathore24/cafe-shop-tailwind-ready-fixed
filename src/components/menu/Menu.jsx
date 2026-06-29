@@ -1,4 +1,4 @@
-import "./Menu.css";
+import "./menu.css";
 import { useState } from "react";
 import { Coffee } from "lucide-react";
 import { menu } from "../../lib/menu-data";

@@ -1,4 +1,4 @@
-import "./Testinominal.css";
+import "./testinominal.css";
 import {
   Quote,
   ChevronLeft,

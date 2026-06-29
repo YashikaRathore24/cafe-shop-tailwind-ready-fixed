@@ -1,4 +1,4 @@
-import "./About.css";
+import "./about.css";
 import aboutImg from "../../assets/image4.jpeg";
 
 import {
