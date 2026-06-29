@@ -1,0 +1,622 @@
+/* ===========================
+   FEATURES SECTION
+=========================== */
+
+.features {
+  position: relative;
+  background: url("../../assets/image5.png") center center/cover no-repeat;
+  min-height: 760px;
+  overflow: visible;
+  padding-top: 120px;
+  padding-bottom: 220px;
+}
+
+/* Dark overlay */
+
+.features-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.45)
+  );
+  z-index: 1;
+}
+
+/* Container */
+
+.features-container {
+  position: relative;
+  z-index: 3;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+/* Heading */
+
+.features-header {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 70px;
+  font-weight: 800;
+  color: #ffff !important;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  letter-spacing: -.5px;
+}
+
+/* Decorative line */
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  margin: 22px auto;
+  border-radius: 50px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ff4b91,
+    transparent
+  );
+}
+
+/* Subtitle */
+
+.features-subtitle {
+  font-size: 23px;
+  line-height: 1.8;
+  color: rgba(255,255,255,.96);
+  max-width: 760px;
+  margin: auto;
+}
+
+/* Floating Cards */
+
+.features-grid {
+  margin-top: 120px;
+
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+}
+
+/* ===========================
+   FEATURE CARD
+=========================== */
+
+.feature-card {
+  position: relative;
+  background: rgba(255, 250, 245, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 26px;
+  padding: 10px;
+
+  text-align: center;
+
+  border: 1px solid rgba(255,255,255,.45);
+
+  box-shadow:
+      0 15px 40px rgba(0,0,0,.18);
+
+  transition: all .45s ease;
+}
+
+.feature-card:hover{
+    transform: translateY(-12px);
+    box-shadow:
+        0 28px 70px rgba(0,0,0,.30);
+}
+
+.feature-icon{
+
+    width:95px;
+    height:95px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#d81b60;
+
+    background:linear-gradient(
+        135deg,
+        #fff9ea,
+        #ffe6f2
+    );
+
+    box-shadow:
+        0 10px 30px rgba(216,27,96,.15);
+
+    transition:.35s;
+}
+
+.feature-card:hover .feature-icon{
+
+    transform:rotate(-8deg) scale(1.08);
+
+    box-shadow:
+        0 16px 35px rgba(216,27,96,.25);
+}
+
+.feature-card h3{
+
+    font-size:28px;
+    font-weight:700;
+
+    color:#b2185b;
+
+    margin-bottom:18px;
+}
+
+.feature-card p{
+
+    font-size:17px;
+
+    color:#555;
+
+    line-height:1.9;
+}
+
+
+/* ===========================
+   LARGE TABLETS
+=========================== */
+
+@media (max-width:1200px){
+
+.features{
+
+min-height:auto;
+padding-bottom:120px;
+
+}
+
+.features-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:28px;
+
+margin-top:90px;
+
+}
+
+.section-title{
+
+font-size:58px;
+
+}
+
+.features-subtitle{
+
+font-size:20px;
+
+}
+
+}
+
+
+/* ===========================
+   TABLETS
+=========================== */
+
+@media (max-width:768px){
+
+.features{
+
+padding-top:80px;
+padding-bottom:80px;
+
+background-position:center;
+
+}
+
+.features-container{
+
+padding:0 20px;
+
+}
+
+.section-title{
+
+font-size:42px;
+
+}
+
+.section-title::after{
+
+width:80px;
+margin:18px auto;
+
+}
+
+.features-subtitle{
+
+font-size:17px;
+line-height:1.7;
+
+padding:0 10px;
+
+}
+
+.features-grid{
+
+grid-template-columns:1fr;
+
+gap:22px;
+
+margin-top:60px;
+
+}
+
+.feature-card{
+
+padding:30px 24px;
+
+border-radius:22px;
+
+}
+
+.feature-icon{
+
+width:78px;
+height:78px;
+
+margin-bottom:18px;
+
+}
+
+.feature-card h3{
+
+font-size:24px;
+
+}
+
+.feature-card p{
+
+font-size:15px;
+
+line-height:1.7;
+
+}
+
+}
+
+
+/* ===========================
+   SMALL PHONES
+=========================== */
+
+@media (max-width:480px){
+
+.features{
+
+padding-top:65px;
+padding-bottom:65px;
+
+}
+
+.features-container{
+
+padding:0 15px;
+
+}
+
+.section-title{
+
+font-size:34px;
+
+}
+
+.features-subtitle{
+
+font-size:15px;
+
+}
+
+.feature-card{
+
+padding:26px 20px;
+
+}
+
+.feature-icon{
+
+width:70px;
+height:70px;
+
+}
+
+.feature-card h3{
+
+font-size:21px;
+
+}
+
+.feature-card p{
+
+font-size:14px;
+
+}
+
+}/* ===========================
+   FEATURE CARD
+=========================== */
+
+.feature-card {
+  position: relative;
+  background: rgba(255, 250, 245, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 26px;
+  padding: 40px 30px;
+
+  text-align: center;
+
+  border: 1px solid rgba(255,255,255,.45);
+
+  box-shadow:
+      0 15px 40px rgba(0,0,0,.18);
+
+  transition: all .45s ease;
+}
+
+.feature-card:hover{
+    transform: translateY(-12px);
+    box-shadow:
+        0 28px 70px rgba(0,0,0,.30);
+}
+
+.feature-icon{
+
+    width:95px;
+    height:95px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#d81b60;
+
+    background:linear-gradient(
+        135deg,
+        #fff9ea,
+        #ffe6f2
+    );
+
+    box-shadow:
+        0 10px 30px rgba(216,27,96,.15);
+
+    transition:.35s;
+}
+
+.feature-card:hover .feature-icon{
+
+    transform:rotate(-8deg) scale(1.08);
+
+    box-shadow:
+        0 16px 35px rgba(216,27,96,.25);
+}
+
+.feature-card h3{
+
+    font-size:28px;
+    font-weight:700;
+
+    color:#b2185b;
+
+    margin-bottom:18px;
+}
+
+.feature-card p{
+
+    font-size:17px;
+
+    color:#555;
+
+    line-height:1.9;
+}
+
+
+/* ===========================
+   LARGE TABLETS
+=========================== */
+
+@media (max-width:1200px){
+
+.features{
+
+min-height:auto;
+padding-bottom:120px;
+
+}
+
+.features-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:28px;
+
+margin-top:90px;
+
+}
+
+.section-title{
+
+font-size:58px;
+
+}
+
+.features-subtitle{
+
+font-size:20px;
+
+}
+
+}
+
+
+/* ===========================
+   TABLETS
+=========================== */
+
+@media (max-width:768px){
+
+.features{
+
+padding-top:80px;
+padding-bottom:80px;
+
+background-position:center;
+
+}
+
+.features-container{
+
+padding:0 20px;
+
+}
+
+.section-title{
+
+font-size:42px;
+
+}
+
+.section-title::after{
+
+width:80px;
+margin:18px auto;
+
+}
+
+.features-subtitle{
+
+font-size:17px;
+line-height:1.7;
+
+padding:0 10px;
+
+}
+
+.features-grid{
+
+grid-template-columns:1fr;
+
+gap:22px;
+
+margin-top:60px;
+
+}
+
+.feature-card{
+
+padding:30px 24px;
+
+border-radius:22px;
+
+}
+
+.feature-icon{
+
+width:78px;
+height:78px;
+
+margin-bottom:18px;
+
+}
+
+.feature-card h3{
+
+font-size:24px;
+
+}
+
+.feature-card p{
+
+font-size:15px;
+
+line-height:1.7;
+
+}
+
+}
+
+
+/* ===========================
+   SMALL PHONES
+=========================== */
+
+@media (max-width:480px){
+
+.features{
+
+padding-top:65px;
+padding-bottom:65px;
+
+}
+
+.features-container{
+
+padding:0 15px;
+
+}
+
+.section-title{
+
+font-size:34px;
+
+}
+
+.features-subtitle{
+
+font-size:15px;
+
+}
+
+.feature-card{
+
+padding:26px 20px;
+
+}
+
+.feature-icon{
+
+width:70px;
+height:70px;
+
+}
+
+.feature-card h3{
+
+font-size:21px;
+
+}
+
+.feature-card p{
+
+font-size:14px;
+
+}
+
+}

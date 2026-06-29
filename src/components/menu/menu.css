@@ -1,0 +1,607 @@
+/* ==========================================
+   PREMIUM MENU
+========================================== */
+
+.menu{
+    padding:90px 8%;
+    background:#f8f5ef;
+    position:relative;
+    overflow:hidden;
+}
+
+.menu-container{
+    max-width:1300px;
+    margin:0 auto;
+}
+/* Decorative */
+
+.menu::before{
+    content:"";
+    position:absolute;
+    width:380px;
+    height:380px;
+    border-radius:50%;
+    background:#ffe9cb;
+    left:-180px;
+    top:60px;
+    opacity:.45;
+}
+
+.menu::after{
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:#ffe6ef;
+    right:-220px;
+    bottom:-180px;
+    opacity:.45;
+}
+
+.menu>*{
+    position:relative;
+    z-index:2;
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.section-title{
+
+    text-align:center;
+
+    font-size:58px;
+
+    font-weight:800;
+
+    color:#4f2d20 !important;
+
+    margin-bottom:18px;
+}
+
+.section-title::after{
+
+    content:"";
+
+    display:block;
+
+    width:95px;
+
+    height:4px;
+
+    margin:18px auto;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        #d6005a,
+        #ff9248
+    );
+}
+
+.section-subtitle{
+
+    max-width:720px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:#6d6d6d;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:60px;
+}
+
+/* ==========================================
+   CATEGORY PILLS
+========================================== */
+
+.menu-tabs {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 14px;
+    margin: 0 auto 60px;
+    max-width: 1200px;
+    overflow: auto;
+}
+
+.menu-tabs::-webkit-scrollbar{
+
+    display:none;
+}
+
+.menu-tab{
+
+    flex-shrink:0;
+
+    border:none;
+
+    background:white;
+
+    border-radius:999px;
+
+    padding:14px 28px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#593526;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.06);
+}
+
+.menu-tab:hover{
+
+    transform:translateY(-3px);
+
+    color:#d6005a;
+}
+
+.menu-tab.active{
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #d6005a,
+        #ff8b42
+    );
+
+    box-shadow:
+    0 15px 30px rgba(214,0,90,.25);
+}
+
+/* ==========================================
+   CATEGORY
+========================================== */
+
+.menu-section{
+    margin-top:20px;
+}
+
+.category-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    font-size:34px;
+
+    color:#4f2d20;
+
+    font-weight:700;
+
+    margin-bottom:35px;
+}
+
+.category-title svg{
+
+    color:#d6005a;
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.menu-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(330px,1fr));
+
+    gap:28px;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.menu-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:22px 24px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    border:1px solid #efe4d7;
+
+    box-shadow:
+    0 12px 30px rgba(0,0,0,.05);
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+/* Left Gradient */
+
+.menu-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:5px;
+
+    height:100%;
+
+    background:linear-gradient(
+        #d6005a,
+        #ff9d42
+    );
+
+    transform:scaleY(0);
+
+    transition:.35s;
+}
+
+.menu-card:hover::before{
+
+    transform:scaleY(1);
+}
+
+/* Hover */
+
+.menu-card:hover{
+
+    transform:
+    translateY(-8px);
+
+    box-shadow:
+    0 18px 45px rgba(0,0,0,.12);
+}
+
+/* ==========================================
+   LEFT
+========================================== */
+
+.menu-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    flex:1;
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.drink-circle{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#fff3e4;
+
+    font-size:28px;
+
+    flex-shrink:0;
+
+    transition:.35s;
+
+    box-shadow:
+    0 10px 18px rgba(0,0,0,.08);
+}
+
+.menu-card:hover .drink-circle{
+
+    transform:
+    rotate(-8deg)
+    scale(1.08);
+
+    background:#ffe3bc;
+}
+
+/* ==========================================
+   NAME
+========================================== */
+
+.menu-left span{
+
+    font-size:20px;
+
+    font-weight:600;
+
+    color:#483022;
+
+    line-height:1.5;
+
+    transition:.3s;
+}
+
+.menu-card:hover .menu-left span{
+
+    color:#d6005a;
+}
+
+/* ==========================================
+   PRICE BADGE
+========================================== */
+
+.menu-card strong{
+
+    min-width:78px;
+
+    height:44px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        135deg,
+        #d6005a,
+        #ff914d
+    );
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    box-shadow:
+        0 12px 25px rgba(214,0,90,.25);
+
+    transition:.35s;
+}
+
+.menu-card:hover strong{
+
+    transform:scale(1.08);
+
+    box-shadow:
+        0 18px 35px rgba(214,0,90,.35);
+}
+
+/* ==========================================
+   CARD SHINE
+========================================== */
+
+.menu-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.5),
+        transparent
+    );
+
+    transition:.8s;
+}
+
+.menu-card:hover::after{
+
+    left:150%;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .menu{
+
+        padding:80px 5%;
+    }
+
+    .section-title{
+
+        font-size:46px;
+    }
+
+    .category-title{
+
+        font-size:30px;
+    }
+
+    .menu-grid{
+
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:768px){
+
+    .menu{
+
+        padding:70px 20px;
+    }
+
+    .section-title{
+
+        font-size:36px;
+    }
+
+    .section-subtitle{
+
+        font-size:15px;
+    }
+
+    .category-title{
+
+        font-size:24px;
+    }
+
+    .menu-card{
+
+        padding:18px;
+    }
+
+    .drink-circle{
+
+        width:50px;
+
+        height:50px;
+
+        font-size:22px;
+    }
+
+    .menu-left span{
+
+        font-size:17px;
+    }
+
+    .menu-card strong{
+
+        min-width:66px;
+
+        height:38px;
+
+        font-size:15px;
+    }
+
+    .menu-tab{
+
+        padding:12px 20px;
+
+        font-size:14px;
+    }
+}
+
+@media(max-width:480px){
+
+    .section-title{
+color: #ffff;
+        font-size:30px;
+    }
+
+    .section-subtitle{
+
+        font-size:14px;
+    }
+
+    .category-title{
+
+        font-size:22px;
+    }
+
+    .menu-card{
+
+        padding:16px;
+    }
+
+    .drink-circle{
+
+        width:44px;
+
+        height:44px;
+
+        font-size:18px;
+    }
+
+    .menu-left{
+
+        gap:12px;
+    }
+
+    .menu-left span{
+
+        font-size:15px;
+    }
+
+    .menu-card strong{
+
+        min-width:60px;
+
+        height:34px;
+
+        font-size:14px;
+    }
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+.menu-tabs::-webkit-scrollbar{
+
+    height:4px;
+}
+
+.menu-tabs::-webkit-scrollbar-thumb{
+
+    background:#d6005a;
+
+    border-radius:20px;
+}
+
+/* ==========================================
+   FINAL POLISH
+========================================== */
+
+.menu-card,
+.menu-tab{
+
+    transition:all .35s ease;
+}
+
+.menu-card:hover{
+
+    transform:
+        translateY(-8px)
+        scale(1.01);
+}

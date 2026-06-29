@@ -1,0 +1,810 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Manrope",sans-serif;
+    background:#fcf8f3;
+    color:#2d2d2d;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header{
+
+    position:sticky;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    background:rgba(252,248,243,.95);
+
+    backdrop-filter:blur(14px);
+
+    border-bottom:1px solid #efe6dc;
+
+    transition:.35s;
+
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.header-inner{
+
+    max-width:1320px;
+
+    margin:auto;
+
+    height:78px;
+
+    padding:0 45px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo-wrap{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    text-decoration:none;
+
+    flex-shrink:0;
+
+}
+
+.logo-img{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.logo-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.logo-text{
+
+    font-size:18px;
+
+    font-weight:800;
+
+    color:#7A4B2A;
+
+    line-height:1.1;
+
+}
+
+.logo-tag{
+
+    margin-top:4px;
+
+    color:#8d8276;
+
+    font-size:13px;
+
+}
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+.nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:34px;
+
+}
+
+.nav a{
+
+    position:relative;
+
+    text-decoration:none;
+
+    color:#353535;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.nav a:hover{
+
+    color:#a85b25;
+
+}
+
+.nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    border-radius:50px;
+
+    background:#a85b25;
+
+    transition:.35s;
+
+}
+
+.nav a:hover::after{
+
+    width:100%;
+
+}
+
+/* Active Link */
+
+.nav a.active{
+
+    color:#a85b25;
+
+}
+
+.nav a.active::after{
+
+    width:100%;
+
+}
+/* ==========================================
+   HEADER RIGHT
+========================================== */
+
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+/* ==========================================
+   SOCIAL ICONS
+========================================== */
+
+.social-btn{
+
+    width:42px;
+    height:42px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    text-decoration:none;
+
+    background:#fff;
+
+    border:1px solid #e9dfd4;
+
+    color:#7A4B2A;
+
+    font-size:18px;
+
+    transition:.35s ease;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.04);
+
+}
+
+.whatsapp:hover{
+
+    background:#25D366;
+    border-color:#25D366;
+    color:#fff;
+
+    transform:translateY(-3px);
+}
+
+.instagram{
+
+    background: radial-gradient(circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285AEB 90%);
+
+    border:none;
+}
+
+.instagram svg{
+    color:#fff;
+}
+
+.instagram:hover{
+    transform:translateY(-3px) scale(1.05);
+}
+
+/* ==========================================
+   VISIT BUTTON
+========================================== */
+
+.visit-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:12px 26px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-size:15px;
+    font-weight:700;
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        #8B4513,
+        #C97A2B
+    );
+
+    transition:.35s;
+
+    box-shadow:
+    0 8px 20px rgba(139,69,19,.20);
+
+}
+
+.visit-btn:hover{
+
+    transform:translateY(-3px);
+
+    background:linear-gradient(
+        135deg,
+        #7A3F14,
+        #B96A22
+    );
+
+    box-shadow:
+    0 14px 28px rgba(139,69,19,.28);
+
+}
+
+/* ==========================================
+   MENU TOGGLE
+========================================== */
+
+.menu-toggle{
+
+    display:none;
+
+    width:46px;
+    height:46px;
+
+    border:none;
+    outline:none;
+
+    border-radius:12px;
+
+    background:#fff;
+
+    color:#7A4B2A;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    transition:.3s;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+}
+
+.menu-toggle:hover{
+
+    background:#7A4B2A;
+
+    color:#fff;
+
+}
+
+/* ==========================================
+   DESKTOP VISIBILITY
+========================================== */
+
+.mobile-visit{
+    display:none;
+}
+
+.desktop-visit{
+    display:inline-flex;
+}
+
+/* ==========================================
+   NICE HOVER EFFECT
+========================================== */
+
+.header{
+
+    transition:
+    background .35s,
+    box-shadow .35s;
+
+}
+
+.header:hover{
+
+    box-shadow:
+    0 8px 30px rgba(0,0,0,.06);
+
+}
+
+/* ==========================================
+   LOGO HOVER
+========================================== */
+
+.logo-wrap:hover .logo-img{
+
+    transform:rotate(-5deg) scale(1.05);
+
+    transition:.35s;
+
+}
+
+.logo-wrap:hover .logo-text{
+
+    color:#A85B25;
+
+    transition:.35s;
+
+}
+
+/* ==========================================
+   OPTIONAL GLASS EFFECT
+========================================== */
+
+@supports(backdrop-filter:blur(15px)){
+
+.header{
+
+background:rgba(252,248,243,.82);
+
+}
+
+}
+
+/* ==========================================
+   RESPONSIVE - TABLET
+========================================== */
+
+@media (max-width: 992px) {
+
+  .header-inner{
+    height:72px;
+    padding:0 20px;
+  }
+
+  /* Hide Desktop Right */
+
+  .header-right{
+    display:none;
+  }
+
+  /* Show Hamburger */
+
+  .menu-toggle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  /* Mobile Navigation */
+
+  .nav{
+
+    position:fixed;
+
+    top:72px;
+    left:-100%;
+
+    width:100%;
+    height:calc(100vh - 72px);
+
+    background:#fcf8f3;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    align-items:center;
+
+    gap:28px;
+
+    padding-top:55px;
+
+    transition:.35s ease;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+  }
+
+  .nav.active{
+
+    left:0;
+
+  }
+
+  .nav a{
+
+    font-size:18px;
+
+    font-weight:600;
+
+  }
+
+  .mobile-visit{
+
+    display:inline-flex;
+
+    margin-top:15px;
+
+  }
+
+  .desktop-visit{
+
+    display:none;
+
+  }
+
+}
+
+/* ==========================================
+   MOBILE
+========
+================================== */
+
+/* ===========================
+   MOBILE HEADER
+=========================== */
+
+/* ===========================
+   PREMIUM MOBILE MENU
+===========================*/
+
+/* ==================================================
+   MOBILE HEADER & MENU
+================================================== */
+
+@media (max-width:992px){
+
+.header-inner{
+    height:72px;
+    padding:0 16px;
+}
+
+.header-right{
+    display:none;
+}
+
+/* Toggle Button */
+
+.menu-toggle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:42px;
+    height:42px;
+
+    padding:0;
+
+    border:none;
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#8B4513,#B96A22);
+
+    color:#fff;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(139,69,19,.18);
+
+    transition:.3s;
+}
+
+.menu-toggle:hover{
+    transform:scale(1.05);
+}
+
+.menu-toggle svg{
+    width:20px;
+    height:20px;
+}
+
+/* Mobile Menu */
+
+.nav{
+
+    position:fixed;
+
+    top:72px;
+    left:0;
+
+    width:100%;
+    height:calc(100vh - 72px);
+
+    background:#fcf8f3;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding:40px 22px;
+
+    gap:14px;
+
+    overflow-y:auto;
+
+    transform:translateX(100%);
+
+    transition:.35s ease;
+
+    z-index:9999;
+}
+
+.nav.active{
+
+    transform:translateX(0);
+
+}
+
+.nav a{
+
+    width:100%;
+    max-width:320px;
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    padding:16px 18px;
+
+    background:#fff;
+
+    border-radius:16px;
+
+    color:#3c2b22;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+}
+
+.nav a:hover,
+.nav a.active{
+
+    background:#FFF2EA;
+
+    color:#A85B25;
+
+}
+
+.mobile-visit{
+
+    width:100%;
+    max-width:320px;
+
+    margin-top:12px;
+
+}
+
+.mobile-visit .visit-btn{
+
+    width:100%;
+    justify-content:center;
+
+}
+
+.desktop-visit{
+
+    display:none;
+
+}
+
+}
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+/* ==========================================
+   SMALL MOBILE (320px - 480px)
+========================================== */
+@media (max-width:480px){
+
+.header-inner{
+    height:66px;
+    padding:0 14px;
+}
+
+.logo-wrap{
+    gap:8px;
+}
+
+.logo-img{
+    width:40px;
+    height:40px;
+}
+
+.logo-text{
+    font-size:15px;
+}
+
+.logo-tag{
+    display:none;
+}
+
+.menu-toggle{
+    width:38px;
+    height:38px;
+}
+
+.menu-toggle svg{
+    width:18px;
+    height:18px;
+}
+
+.nav{
+
+    top:66px;
+
+    height:calc(100vh - 66px);
+
+    padding:28px 18px;
+
+}
+
+.nav a{
+
+    font-size:16px;
+
+    padding:14px 16px;
+
+}
+
+.mobile-visit{
+
+    max-width:100%;
+
+}
+
+.mobile-visit .visit-btn{
+
+    font-size:15px;
+
+    padding:14px;
+
+}
+
+}
+
+/* ==========================================
+   LARGE DESKTOP
+========================================== */
+
+@media (min-width:1400px){
+
+.header-inner{
+
+max-width:1400px;
+
+}
+
+.nav{
+
+gap:40px;
+
+}
+
+}
+
+/* ==========================================
+   SMOOTH MENU ANIMATION
+========================================== */
+
+.nav a{
+
+opacity:1;
+
+transform:translateY(0);
+
+transition:
+color .3s,
+transform .3s;
+
+}
+
+.nav a:hover{
+
+transform:translateY(-2px);
+
+}
+
+/* ==========================================
+   REMOVE BLUE TAP HIGHLIGHT
+========================================== */
+
+a,
+button{
+
+-webkit-tap-highlight-color:transparent;
+
+}
+
+/* ==========================================
+   BUTTON FOCUS
+========================================== */
+
+button:focus,
+a:focus{
+
+outline:none;
+
+}

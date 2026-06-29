@@ -1,0 +1,85 @@
+/* ------------------------------
+   GLOBAL THEME COLORS
+------------------------------ */
+:root {
+  --pink: #ff8bb0;
+  --mint: #9be7c4;
+  --light-mint: #d0f5e4;
+  --cream: #fff7f0;
+  --brown: #5a3e2b;
+  --dark: #2d1e15;
+  --white: #ffffff;
+}
+
+/* ------------------------------
+   GLOBAL STYLES
+------------------------------ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: var(--cream);
+  color: var(--brown);
+}
+
+section {
+  padding: 100px 60px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 700;
+}
+
+/* Center heading */
+section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: var(--pink);
+}
+
+/* Paragraphs */
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   BUTTONS
+------------------------------ */
+button {
+  padding: 12px 32px;
+  background: var(--pink);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: var(--mint);
+  color: var(--brown);
+  transform: scale(1.05);
+}
+
+/* ------------------------------
+   NAVIGATION RESET
+------------------------------ */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}

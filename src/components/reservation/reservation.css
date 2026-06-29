@@ -1,0 +1,27 @@
+.reservation {
+  padding: 80px 20px;
+  background: #fff5f8;
+  text-align: center;
+}
+
+.reserve-form {
+  margin-top: 20px;
+}
+
+.reserve-form input,
+.reserve-form button {
+  padding: 12px 15px;
+  margin: 8px;
+  border: 2px solid #ff8fb4;
+  border-radius: 8px;
+}
+
+.reserve-form button {
+  background: #ff4f8a;
+  color: white;
+  cursor: pointer;
+}
+
+.reserve-form button:hover {
+  background: #ff2e78;
+}
