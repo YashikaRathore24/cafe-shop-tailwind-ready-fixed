@@ -91,7 +91,7 @@ function Menu() {
 
                   </div>
 
-                  <strong>₹{item.price}</strong>
+                
 
                 </div>
               ))}
