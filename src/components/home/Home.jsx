@@ -116,23 +116,23 @@ function Home() {
 
   <div className="collab-buttons">
 
-    <a
-      href="https://wa.me/916375883081"
-      target="_blank"
-      rel="noreferrer"
-      className="whatsapp-btn"
-    >
-      💬 WhatsApp Us
-    </a>
+  <a
+  href="https://wa.me/916375883081"
+  target="_blank"
+  rel="noreferrer"
+  className="whatsapp-btn"
+>
+  💬 WhatsApp
+</a>
 
-    <a
-      href="https://www.instagram.com/modijichaiwale__/"
-      target="_blank"
-      rel="noreferrer"
-      className="insta-btn"
-    >
-      📸 Follow Instagram
-    </a>
+<a
+  href="https://www.instagram.com/modijichaiwale__/"
+  target="_blank"
+  rel="noreferrer"
+  className="insta-btn"
+>
+  📸 Instagram
+</a>
 
   </div>
 
