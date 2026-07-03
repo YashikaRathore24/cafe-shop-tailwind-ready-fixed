@@ -91,37 +91,56 @@ function Home() {
 
         <div className="hero-visual">
 
-          <div className="glass-box">
+       <div className="glass-box">
 
-            <h3>✨ Experience Jaipur's Most Beautiful Café</h3>
+  <span className="collab-tag">
+    ✨ Let's Create Together
+  </span>
 
-            <p>
-              A perfect blend of authentic chai,
-              handcrafted coffee, floral interiors,
-              delicious food, and unforgettable moments.
-            </p>
+  <h3>
+    🎉 We're Open for
+    <br />
+    Collaborations
+  </h3>
 
-            <div className="feature-list">
+  <p>
+    Are you a Food Blogger, Food Vlogger,
+    Influencer or Content Creator?
 
-              <div className="feature">
-                ☕ Freshly Brewed
-              </div>
+    <br />
+    <br />
 
-              <div className="feature">
-                🌸 Floral Ambience
-              </div>
+    We'd love to invite you to experience our café
+    and create amazing content together.
+  </p>
 
-              <div className="feature">
-                🍹 Premium Mocktails
-              </div>
+  <div className="collab-buttons">
 
-              <div className="feature">
-                🍰 Fresh Snacks
-              </div>
+    <a
+      href="https://wa.me/916375883081"
+      target="_blank"
+      rel="noreferrer"
+      className="whatsapp-btn"
+    >
+      💬 WhatsApp Us
+    </a>
 
-            </div>
+    <a
+      href="https://www.instagram.com/modijichaiwale__/"
+      target="_blank"
+      rel="noreferrer"
+      className="insta-btn"
+    >
+      📸 Follow Instagram
+    </a>
 
-          </div>
+  </div>
+
+  <div className="collab-footer">
+    ❤️ Let's brew something amazing together!
+  </div>
+
+</div>
 
         </div>
 
