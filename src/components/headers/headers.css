@@ -228,7 +228,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-
+color:#7A4B2A;
     border-radius:50%;
 
     text-decoration:none;
@@ -247,13 +247,20 @@ body{
 
 }
 
-.whatsapp:hover{
-
+.whatsapp{
     background:#25D366;
     border-color:#25D366;
     color:#fff;
+}
 
-    transform:translateY(-3px);
+.whatsapp svg{
+    color:#fff;
+}
+
+.whatsapp:hover{
+    background:#20bf5b;
+    border-color:#20bf5b;
+    transform:translateY(-3px) scale(1.05);
 }
 
 .instagram{
