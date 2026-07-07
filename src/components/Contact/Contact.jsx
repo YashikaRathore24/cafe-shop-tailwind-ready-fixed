@@ -1,241 +1,182 @@
 import "./contact.css";
-import cafeImg from "../../assets/image5.png";
+
+import nirmanImg from "../../assets/cafe_2.png";
+import chitrakootImg from "../../assets/image_9.jpeg";
 
 import {
-  FaMapMarkerAlt,
-  FaPhoneAlt,
-  FaClock,
   FaWhatsapp,
   FaInstagram,
-  FaArrowRight,
+  FaMapMarkerAlt,
+  FaClock,
+  FaLocationArrow,
 } from "react-icons/fa";
 
 const Contact = () => {
   return (
     <section className="contact" id="contact">
+      {/* Background Blur */}
+      <div className="bg-circle bg1"></div>
+      <div className="bg-circle bg2"></div>
+      <div className="bg-circle bg3"></div>
 
-      {/* Background Decorations */}
+      {/* ================= BRANCHES ================= */}
 
-      <div className="flower flower1"></div>
-      <div className="flower flower2"></div>
-      <div className="flower flower3"></div>
+      <div className="branches">
+        <div className="branch-heading">
+          <span className="section-tag">📍 OUR BRANCHES</span>
 
-      <div className="leaf leaf1"></div>
-      <div className="leaf leaf2"></div>
-
-      {/* ===========================
-          HERO SECTION
-      =========================== */}
-
-      <div className="contact-wrapper">
-
-        {/* LEFT */}
-
-        <div className="contact-left">
-
-          <span className="small-title">
-            ☕ WELCOME TO MODI JI CHAI WALE
-          </span>
-
-          <h2>
-            Visit Us &
-            <br />
-            <span>Enjoy Every Sip</span>
-            <span className="cup"> ☕</span>
-          </h2>
+          <h2>Visit Our Cafés</h2>
 
           <p>
-            Whether you're craving a hot cup of chai,
-            refreshing mocktails or delicious snacks,
-            we're ready to welcome you with a warm smile
-            and a peaceful garden ambience.
+            Enjoy the same delicious chai, snacks and warm ambience at both of
+            our Jaipur locations.
           </p>
+        </div>
 
-          {/* ===========================
-              INFO GRID
-          =========================== */}
+        <div className="branches-grid">
+          {/* ================= CHITRAKOOT ================= */}
 
-          <div className="info-grid">
+          <div className="branch-card">
+            <div className="branch-image">
+              <img src={chitrakootImg} alt="Chitrakoot Branch" />
 
-                        {/* ADDRESS */}
-
-            <div className="mini-card">
-
-              <div className="mini-icon">
+              <div className="location-tag">
                 <FaMapMarkerAlt />
+                CHITRAKOOT
               </div>
-
-              <h3>Address</h3>
-
-              <p>
-                2/49 Chitrakoot,
-                <br />
-                Gandhi Path Road,
-                <br />
-                Near Mall of Jaipur
-              </p>
-
             </div>
 
-            {/* PHONE */}
+            <div className="branch-content">
+              <div className="branch-row">
+                <div className="circle-icon">
+                  <FaMapMarkerAlt />
+                </div>
 
-            <div className="mini-card">
-
-              <div className="mini-icon">
-                <FaPhoneAlt />
+                <div>
+                  <h3>
+                    2/49, Chitrakoot,
+                    <br />
+                    Gandhi Path Road,
+                    <br />
+                    Jaipur - 302021
+                  </h3>
+                </div>
               </div>
 
-              <h3>Phone</h3>
+              <div className="divider"></div>
 
-              <p>
-                +91 6375883081
-              </p>
-
-            </div>
-
-            {/* OPEN DAILY */}
-
-            <div className="mini-card">
-
-              <div className="mini-icon">
+              <div className="time-row">
                 <FaClock />
+                <span>10:00 AM – 11:00 PM</span>
               </div>
 
-              <h3>Open Daily</h3>
+              <div className="branch-buttons">
+                <a
+                  href="https://maps.google.com/?q=Modi+Ji+Chai+Wale+Chitrakoot+Jaipur"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="primary-btn"
+                >
+                  <FaLocationArrow />
+                  Directions
+                </a>
 
-              <p>
-                10:00 AM –
-                <br />
-                11:00 PM
-              </p>
+                <a
+                  href="https://wa.me/916375883081"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="whatsapp-btn"
+                >
+                  <FaWhatsapp />
+                  WhatsApp
+                </a>
 
+                <a
+                  href="https://instagram.com/modijichaiwale__"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="instagram-btn"
+                >
+                  <FaInstagram />
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* ================= NIRMAN NAGAR ================= */}
+
+          <div className="branch-card">
+            <div className="branch-image">
+              <img src={nirmanImg} alt="Nirman Nagar Branch" />
+
+              <div className="location-tag">
+                <FaMapMarkerAlt />
+                NIRMAN NAGAR
+              </div>
             </div>
 
-          </div>
+            <div className="branch-content">
+              <div className="branch-row">
+                <div className="circle-icon">
+                  <FaMapMarkerAlt />
+                </div>
 
-          {/* ===========================
-              SOCIAL BUTTONS
-          =========================== */}
+                <div>
+                  <h3>
+                    12, Aasha Vihar Colony,
+                    <br />
+                    Rani Sati Nagar,
+                    <br />
+                    Nirman Nagar,
+                    <br />
+                    Jaipur - 302019
+                  </h3>
+                </div>
+              </div>
 
-          <div className="button-group">
+              <div className="divider"></div>
 
-            <a
-              href="https://wa.me/916375883081"
-              target="_blank"
-              rel="noreferrer"
-              className="btn whatsapp"
-            >
-              <FaWhatsapp />
+              <div className="time-row">
+                <FaClock />
+                <span>10:00 AM – 11:00 PM</span>
+              </div>
 
-              WhatsApp
+              <div className="branch-buttons">
+                <a
+                  href="https://maps.google.com/?q=Modi+Ji+Chai+Wale+Nirman+Nagar+Jaipur"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="primary-btn"
+                >
+                  <FaLocationArrow />
+                  Directions
+                </a>
 
-              <FaArrowRight className="btn-arrow" />
+                <a
+                  href="https://wa.me/916375883081"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="whatsapp-btn"
+                >
+                  <FaWhatsapp />
+                  WhatsApp
+                </a>
 
-            </a>
-
-            <a
-              href="https://www.instagram.com/modijichaiwale__/"
-              target="_blank"
-              rel="noreferrer"
-              className="btn instagram"
-            >
-              <FaInstagram />
-
-              Instagram
-
-              <FaArrowRight className="btn-arrow" />
-
-            </a>
-
-          </div>
-
-        </div>
-
-        {/* ===========================
-            RIGHT IMAGE
-        =========================== */}
-
-        <div className="contact-right">
-
-          <div className="image-card">
-
-            <img
-              src={cafeImg}
-              alt="Modi Ji Chai Wale"
-            />
-
-            <div className="image-overlay">
-
-              <h3>
-                Experience Every Sip ☕
-              </h3>
-
-              <p>
-                Fresh Chai • Mocktails • Snacks
-              </p>
-
+                <a
+                  href="https://instagram.com/modijichaiwale__"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="instagram-btn"
+                >
+                  <FaInstagram />
+                  Instagram
+                </a>
+              </div>
             </div>
-
           </div>
-
         </div>
-
       </div>
-
-            {/* ==================================
-              FIND US SECTION
-      =================================== */}
-
-      <div className="location-wrapper">
-
-        {/* LEFT CARD */}
-
-        <div className="location-card">
-
-          <div className="location-content">
-
-            <div className="location-icon">
-              <FaMapMarkerAlt />
-            </div>
-
-            <h2>Find Us</h2>
-
-            <div className="divider"></div>
-
-            <p>
-              We're just a few minutes from
-              <br />
-              Mall of Jaipur.
-            </p>
-
-            <a
-              href="https://maps.google.com/?q=Modi+Ji+Chai+Wale,+Jaipur"
-              target="_blank"
-              rel="noreferrer"
-              className="location-btn"
-            >
-              Get Directions
-              <FaArrowRight />
-            </a>
-
-          </div>
-
-        </div>
-
-        {/* GOOGLE MAP */}
-
-        <div className="location-map">
-
-          <iframe
-            title="Google Map"
-            src="https://www.google.com/maps?q=Modi+Ji+Chai+Wale,+2/49,+Chitrakoot,+Gandhi+Path+Rd,+near+Mall+of+Jaipur,+Jaipur,+Rajasthan+302021&output=embed"
-            loading="lazy"
-          />
-
-        </div>
-
-      </div>
-
     </section>
   );
 };

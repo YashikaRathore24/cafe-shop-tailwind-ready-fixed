@@ -18,12 +18,13 @@ function App() {
     
       <Header />
       <Home />
+        <Contact />
       <About />
       <Features />
       <Menu />
       <Gallery />
       <Testinomal />
-      <Contact />
+    
       {/* <Reservation /> */}
       <Footer />
     </>

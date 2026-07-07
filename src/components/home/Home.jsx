@@ -33,9 +33,9 @@ function Home() {
 
         <div className="hero-content">
 
-          <div className="hero-badge">
+          {/* <div className="hero-badge">
             🌸 Jaipur's Favourite Floral Café
-          </div>
+          </div> */}
 
           <h1 className="sm:!text-6xl text-3xl">
             Brewing
