@@ -88,7 +88,7 @@ export default function Footer() {
                 Jaipur - 302019
               </span>
             </p>
-            <span className="branch-hours">Timing: 10:00 AM - 11:00 PM</span>
+            <span className="branch-hours">Timing: 11:00 AM - 11:00 PM</span>
           </div>
         </div>
 

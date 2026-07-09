@@ -139,7 +139,7 @@ const Contact = () => {
 
               <div className="time-row">
                 <FaClock />
-                <span>10:00 AM – 11:00 PM</span>
+                <span>11:00 AM – 11:00 PM</span>
               </div>
 
               <div className="branch-buttons">
